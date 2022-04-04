@@ -7,9 +7,16 @@
 }
 
 /* BARRA TOPO */
+
+.conteudo{
+    padding-top: 82px;
+    padding-bottom: 80px;
+    background-color: #E5E5E5;
+}
+
 .top{
     display: flex;
-   /* position: fixed;*/
+   position: fixed;
     top: 0;
     right: 0;
     width: 100%;
@@ -43,9 +50,11 @@
 .tipos1{
     display: flex;
     width: 100%;
-    height: 216px;
+    height: 180px;
     margin-top: 10px;
     overflow: auto;
+    
+
 }
 .bloco{
     margin-left: 5px ;
@@ -55,64 +64,156 @@
     padding-right: 10px;
     text-align: center;
     height: 100%;
-    width: 172px;
+    width: 140px;
     border-radius: 9px;
-    border: 1px solid black;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px #00000040;
     
 }
+.informs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+ .selecionado{ 
+    position: relative;
+    border: solid 5px green;
+}
+.biscoito{ 
+    position: relative;
+    border: solid 5px green;
+}
+.selecionado3{ 
+    position: relative;
+    border: solid 5px green;
+}
+
+
+
+
+.s1{
+    position: absolute;
+    width: 20px;
+    height: 27px;
+    margin-top: 57px;
+    margin-left: 90px;
+    border: 0px solid green;
+}
+
+img{
+    width: 111px;
+   height: 73px;
+
+}
 .nome{
-    margin-top: 10px;
-    margin-right: 20px;
+    margin-top: 4px;
+    margin-right: 37px;
+    width: 118px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 700;
 }
+
 .detalhes{
     margin-top: 5px;
-    margin-left: 1px;
-    width:147px;
+    margin-left: -3px;
+    width:123px;
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 300;
     color: #A6A6A6;
 }
 .preço{
-    margin-top: 20px;
-    margin-right: 63px;
+    justify-content: flex-start;
     font-family: 'Roboto', sans-serif;
+    margin-left: -51px;
     font-size: 16px;
     font-weight: 500;
     color: #000000;
 
 }
+
+.p1{
+    margin-left: -52px;
+    margin-top: 18px;
+}
+
+.p0{
+    margin-top: 8px;
+}
+
+
+.d1{
+    margin-top: 9px;
+    margin-left: -28px;
+}
+.n1{
+    margin-left: -16px;
+    width: 139px;
+    font-size: 14px;
+}
+
+.d2{
+    margin-top: 9px;
+    margin-left: -14px;
+}
+.n2{
+
+    margin-left: -42px;
+    width: 139px;
+    font-size: 16px;
+}
 /* PRATO */
 
 /* BARRA DE BAIXO */
 .barraBaixo{
-    position: fixed;
+    background-color: #ffffff;
+    width: 100%;
+    height: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
     bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 92px;
-    background-color: #FFFFFF;
+    z-index: 1;
 }
 
 .Seleçao{
+    background-color: #cbcbcb;
+    border-radius: 50px;
     display: flex;
     justify-content: center;
+    align-items: center;
     text-align: center;
-    background-color: #E5E5E5;
-    width: 364px;
-    height: 61px;
-    border-radius: 50px;
-    color:#FFFFFF;
-    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    margin: 15px 0;
+    width: 60%;
+    height: 60px;
     font-size: 20px;
+    line-height: 23.44px;
+    letter-spacing: 0.36px;
+    font-family: "Roboto", sans-serif;
+}
+.Seleçao p{
+    width: 195px;
+}
+.textoSeletor{
+    width: 203px;
+    height: 45px;
+    margin-left: 90px;
+    margin-top: 8px;
+    
 }
 
-
+.verdinha{
+    background-color: green;
+}
+.finalizado{
+    display: none;
+    font-weight: bold;
+    margin-left: 125px;
+    margin-top: 18px;
+}
 /* BARRA DE BAIXO */
