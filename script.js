@@ -1,6 +1,7 @@
 let pratoEscolhido;
 let bebidaEscolhida;
 let sobremesaEscolhida;
+console.log(pratoEscolhido)
 
  function escolhaPrato(prato){
       pratoEscolhido = document.querySelector(".prato > .selecionado")
@@ -9,6 +10,7 @@ let sobremesaEscolhida;
         }
             prato.classList.add("selecionado")
         console.log(pratoEscolhido)
+        FecharPedido()
      }
     
 
@@ -19,28 +21,35 @@ let sobremesaEscolhida;
      }
      bebida.classList.add("selecionado")
      console.log(bebidaEscolhida)
+     FecharPedido()
  }
 
  function escolhaSobremesa(sobremesa){
+    console.log(sobremesaEscolhida)
       sobremesaEscolhida = document.querySelector(".sobremesa>.selecionado")
      if(sobremesaEscolhida !== null){
          sobremesaEscolhida.classList.remove("selecionado");
      }
      sobremesa.classList.add("selecionado")
-     console.log(sobremesaEscolhida)
+    
+     FecharPedido()
   }
 
 
  function FecharPedido(){
-     if(sobremesaEscolhida == null && 
-        bebidaEscolhida == null && 
-        sobremesaEscolhida == null){
-            let Esconde = document.querySelector(".Seleçao")
-            let Apareça = document.querySelector('.escondido')
+     if(sobremesaEscolhida !== undefined && 
+        bebidaEscolhida !== undefined && 
+        sobremesaEscolhida !== undefined){
+            let Esconde = document.querySelector("#aberto")
+            let Apareca = document.querySelector("#fechado")
             Esconde.classList.add("escondido")
-            Apareça.classList.remove("escondido")
+            Apareca.classList.remove("escondido")
      }
  }
+ 
+    function ConfirmaPedido(){
+        
+    }
 
 
 
