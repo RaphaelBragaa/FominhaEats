@@ -38,6 +38,11 @@
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
 }
+
+b{
+    font-weight: 600;
+    font-size: 25px;
+}
 /* BARRA TOPO */
 
 /* PRATO */
@@ -117,7 +122,7 @@ img{
     margin-right: 37px;
     width: 118px;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 16vw;
     font-weight: 700;
 }
 
@@ -157,7 +162,7 @@ img{
 .n1{
     margin-left: -16px;
     width: 139px;
-    font-size: 14px;
+    font-size: 1.7vw;
 }
 
 .d2{
@@ -216,8 +221,6 @@ img{
     display: none;
 }
 
-
-
 .red{
     background-color: #CF2B2B;
 }
@@ -269,7 +272,31 @@ img{
     justify-content: space-between;
     font-size: 20px;
     font-weight: 400;
-    margin-bottom: 19px;
+    margin-bottom: 20px;
   
   }
 
+.fechamento{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    color: #CF2B2B;
+    height: 40px;
+    width: 100%;
+    border-radius: 15px;
+    
+    padding-left: 20px;
+}
+
+.fechamento > p{
+    font-weight: 600;
+}
+h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.skin{
+    display: none;
+}
