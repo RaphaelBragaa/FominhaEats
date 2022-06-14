@@ -7,6 +7,7 @@ let NomeBebida;
 let preçoBebida;
 let NomeSobremesa;
 let preçoSobremesa;
+let Apareca;
 
 
 
@@ -68,21 +69,32 @@ let preçoSobremesa;
 
 
  function FecharPedido(){
-     if(sobremesaEscolhida !== undefined && 
+     if(pratoEscolhido !== undefined && 
         bebidaEscolhida !== undefined && 
         sobremesaEscolhida !== undefined){
             let Esconde = document.querySelector("#aberto")
-            let Apareca = document.querySelector("#fechado")
+            Apareca = document.querySelector("#fechado")
             Esconde.classList.add("escondido")
             Apareca.classList.remove("escondido")
      }
  }
  
     function ConfirmaPedido(){
+       
 
+
+        Apareca.classList.add("escondido")
         let total = (preçoSobremesa + preçoBebida + preçoPrato).toFixed(2)
        const elemento = document.querySelector(".Confirma") 
        elemento.classList.remove("skin")
+        let mensagem = 
+        `Olá, gostaria de fazer o pedido:
+        - Prato: ${NomePrato}
+        - Bebida: ${NomeBebida}
+        - Sobremesa: ${NomeSobremesa}
+        Total: R$ ${total}`
+        let MensagemPronta = encodeURIComponent(mensagem)
+
        elemento.innerHTML = 
        `
        <div class="caixa">
@@ -104,7 +116,7 @@ let preçoSobremesa;
            <p><b>R$ ${total}</b></p>
        </div>
        <div class="fechamento">
-           <p>Tudo certo, fechar pedido !</p> 
+           <a href=" https://wa.me/5579999438484?text=${MensagemPronta}"><p>Tudo certo, fechar pedido !</p></a> 
        </div>
        <h2 onclick="Reiniciar()">Cancelar</h2>
    </div>
@@ -114,6 +126,8 @@ let preçoSobremesa;
     function Reiniciar(){
         window.location.reload()
     }
+
+    
 
 
 
