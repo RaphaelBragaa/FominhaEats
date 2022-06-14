@@ -300,3 +300,8 @@ h2{
 .skin{
     display: none;
 }
+
+a{
+    text-decoration: none;
+    color: #CF2B2B;
+}
