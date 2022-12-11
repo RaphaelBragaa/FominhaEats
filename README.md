@@ -27,3 +27,19 @@ O sistema consiste na seleção de apenas um item por coluna, para pode habilita
 Em seguida surgi uma tela informando os itens e valores dos itens adicionados, levando após confirmação o pedido é enviado para o restaurante via WhatsApp.
 
 ![](https://cdn.discordapp.com/attachments/1048269035424456704/1051633866277933176/2022-12-11_18-57-09.gif) 
+
+## Aprendizados
+
+
+ Sendo meu primeiro projeto utilizando Javascript priorizando a versão mobile,
+botei em prática meus conhecimentos com a manipulação do DOM (Document Object Model) utilizando seletores como
+querySelector, innerHTML e afins. Fiz também uso do onClick para acionar a mudança de estado das divs selecionadas.
+Posteriormente fazendo uso do Css em conjunto com o Javascript ativei o botão de seleção da div surgindo a tela de confirmação do pedido
+Levando em seguida para o envio da mensagem do usuário com o pedido para o restaurante.
+
+## Roadmap
+
+- Versão Desktop
+
+
+
