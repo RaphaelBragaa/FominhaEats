@@ -87,7 +87,8 @@ let Apareca;
         let total = (preçoSobremesa + preçoBebida + preçoPrato).toFixed(2)
        const elemento = document.querySelector(".Confirma") 
        elemento.classList.remove("skin")
-        let mensagem = 
+        
+       let mensagem = 
         `Olá, gostaria de fazer o pedido:
         - Prato: ${NomePrato}
         - Bebida: ${NomeBebida}
