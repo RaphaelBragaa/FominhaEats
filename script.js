@@ -16,7 +16,7 @@ let Apareca;
       pratoEscolhido = document.querySelector(".prato > .selecionado")
       preçoPrato = prato.querySelector(".preço").innerText 
       preçoPrato = preçoPrato.replace("R$ ", "");
-      preçoPrato = parseFloat(preçoPrato.replace(',', '.'))
+      preçoPrato = parseFloat(preçoPrato.replace(',', '.')).toFixed(2);
       console.log(typeof(preçoPrato))
       NomePrato = prato.querySelector(".nome").innerText
       
@@ -36,7 +36,7 @@ let Apareca;
       bebidaEscolhida = document.querySelector(".bebidas > .selecionado")
       preçoBebida = bebida.querySelector(".preço").innerText 
       preçoBebida = preçoBebida.replace("R$ ", "");
-      preçoBebida = parseFloat(preçoBebida.replace(',', '.'))
+      preçoBebida = parseFloat(preçoBebida.replace(',', '.')).toFixed(2);
       NomeBebida= bebida.querySelector(".nome").innerText
         
      if(bebidaEscolhida !== null){
@@ -52,8 +52,9 @@ let Apareca;
       sobremesaEscolhida = document.querySelector(".sobremesa>.selecionado")
       preçoSobremesa = sobremesa.querySelector(".preço").innerText
         preçoSobremesa = preçoSobremesa.replace("R$ ", "");
-        preçoSobremesa = parseFloat(preçoSobremesa.replace(',', '.'))
-        console.log(preçoSobremesa)
+        console.log("🚀 ~ file: script.js:55 ~ escolhaSobremesa ~ preçoSobremesa:", preçoSobremesa)
+        preçoSobremesa = parseFloat(preçoSobremesa.replace(',', '.')).toFixed(2);
+        
       
   
     
@@ -84,7 +85,9 @@ let Apareca;
 
 
         Apareca.classList.add("escondido")
-        let total = (preçoSobremesa + preçoBebida + preçoPrato).toFixed(2)
+        
+        let total = Number(preçoSobremesa) + Number(preçoBebida) + Number(preçoPrato)
+        total= total.toFixed(2)
        const elemento = document.querySelector(".Confirma") 
        elemento.classList.remove("skin")
         
