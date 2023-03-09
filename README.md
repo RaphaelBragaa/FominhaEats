@@ -23,7 +23,7 @@ VsCode, Vercel
 ## Introdução
 O site permite de forma fácil a escolha do seu combo, enviando em seguida o pedido por WhatsApp diretamente para o restaurante.
 ## Descrição Técnica
-O sistema consiste na seleção de apenas um item por coluna, para pode habilitar o botão de fechar pedido.
+O sistema consiste na seleção de apenas um item por coluna, para poder habilitar o botão de fechar pedido.
 Em seguida surgi uma tela informando os itens e valores dos itens adicionados, levando após confirmação o pedido é enviado para o restaurante via WhatsApp.
 
 ![](https://cdn.discordapp.com/attachments/1048269035424456704/1051633866277933176/2022-12-11_18-57-09.gif) 
